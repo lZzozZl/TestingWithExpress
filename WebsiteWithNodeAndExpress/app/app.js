@@ -3,6 +3,8 @@ var app = express();
 
 app.get('/', function(req,res){
   res.send('<h1>Zdrastiii');
+  var ip = req.ip;
+  console.log(ip);
 });
 
 var server = app.listen(3000, function(){
